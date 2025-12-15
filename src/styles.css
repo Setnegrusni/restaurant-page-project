@@ -1,3 +1,14 @@
-body {
-    background-color: darkslategray;
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home-text,
+.home-banner {
+    text-align: center;
+}
+
+.home-img {
+    width: 80vw;
+    height: 80vh;
 }
