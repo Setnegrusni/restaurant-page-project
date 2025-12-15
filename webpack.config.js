@@ -1,0 +1,25 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin"); //plugin que carga archivos .html
+
+module.exports = {
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  plugins: [ //Para cargar el .html principal
+    new HtmlWebpackPlugin({
+        template: "./src/template.html",
+    }),
+  ],
+  module: { //Para cargar el archivo .css
+    rules: [
+        {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+        },
+    ],
+  },
+};
