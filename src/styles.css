@@ -20,7 +20,7 @@ nav {
 button {
     border-style: none;
     height: 8vh;
-    width: 15vh;
+    width: 15vw;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
@@ -37,6 +37,7 @@ button:hover {
     align-items: center;
 }
 
+/*HOME TAB*/
 .home-text,
 .home-banner {
     text-align: center;
@@ -54,17 +55,31 @@ h1,
     height: 80vh;
 }
 
+/*MENU TAB*/
 .dish-area {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    width: auto;
+    margin-bottom: 5vh;
+    align-items: center;
+    border: 2px dashed black;
 }
 
-.dish-area > p {
+.dish-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dish-info > p {
     margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .dish-img {
     height: 30vh;
     width: 25vh;
-    margin-bottom: 5vh;
 }
