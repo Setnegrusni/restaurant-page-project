@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #ee670f;
 }
 
 header {
@@ -12,6 +13,24 @@ nav {
     justify-content: center;
 }
 
+nav {
+    border-bottom: 2px solid black;
+}
+
+button {
+    border-style: none;
+    height: 8vh;
+    width: 15vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, #6e4427, #ee670f);
+}
+
+button:hover {
+    background-image: linear-gradient(to top, #fcca00, #ee670f);
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -21,6 +40,13 @@ nav {
 .home-text,
 .home-banner {
     text-align: center;
+}
+
+h1,
+.home-text > p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
 }
 
 .home-img {
