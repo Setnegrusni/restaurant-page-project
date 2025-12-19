@@ -25,10 +25,12 @@ function createDishArea(i) {
 
 function addElementsToDishArea(dishAreaId, dishPosition) {
     const selectDishArea = document.querySelector("[data-id='" + dishAreaId + "']");
+    const dishInfo = document.createElement("div");
     const dishTitle = document.createElement("p");
     const dishPrice = document.createElement("p");
     const setImg = document.createElement("img");
 
+    dishInfo.classList.add("dish-info");
     setImg.classList.add("dish-img");
 
     if (dishPosition === 0) {
@@ -47,8 +49,9 @@ function addElementsToDishArea(dishAreaId, dishPosition) {
         console.log("Se fue raro");
     }
     
-    selectDishArea.appendChild(dishTitle);
-    selectDishArea.appendChild(dishPrice);
+    selectDishArea.appendChild(dishInfo);
+    dishInfo.appendChild(dishTitle);
+    dishInfo.appendChild(dishPrice);
     selectDishArea.appendChild(setImg);
 }
 
