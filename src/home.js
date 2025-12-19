@@ -11,7 +11,7 @@ function showHome() {
 
     homeText.classList.add("home-text");
     homeBanner.classList.add("home-banner");
-    welcomeText.textContent = "Come and try one of the best cuisines in the world!";
+    welcomeText.textContent = "COME AND TRY ONE OF THE BEST CUISINES IN THE WORLD!";
     setImg.src = homeImg;
     setImg.classList.add("home-img");
 
